@@ -1,17 +1,18 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import { useSelector } from "react-redux";
-import { Navbar, Footer, Home, ProductOpen, About, Filials, Tel } from "./components";
 import Aos from "aos";
+import { Route, Routes } from "react-router-dom";
+import { Ads, AllProducts, Navbar, NewProducts, Sidebar } from "./components/";
 import 'aos/dist/aos.css';
 import 'swiper/css';
-import { Route, Routes } from "react-router-dom";
 const { palette } = createTheme();
 const { augmentColor } = palette;
 const createColor = (mainColor) => augmentColor({ color: { main: mainColor } });
 
 function App() {
   const [mode, setMode] = useState("light")
+  const { sidebarOpen } = useSelector((state) => state.theme)
   const { isDarkMode } = useSelector(state => state.theme)
   const getTokens = (mode) => ({
     palette: {
@@ -33,7 +34,8 @@ function App() {
             greyToWhite: "#F3F3F3",
             blueOpacity: "#01235066",
             contact: "#F6F7F9",
-            whiteToBlack: "#F3F3F3"
+            whiteToBlack: "#F3F3F3",
+            userBg: "#fff"
           }
         } : {
           blue: createColor("#012350"),
@@ -51,7 +53,8 @@ function App() {
             greyToWhite: "#F3F3F3",
             blueOpacity: "#FFFFFF66",
             contact: "#FFFFFF0D",
-            whiteToBlack: "#FFFFFF0D"
+            whiteToBlack: "#FFFFFF0D",
+            userBg: "#FFFFFF0D"
           }
         })
     },
@@ -59,9 +62,9 @@ function App() {
       MuiCssBaseline: {
         styleOverrides: (theme) => ({
           body: {
+            minWidth: "992px",
             width: "100vw",
             hegiht: "100vh",
-            overflowX: "hidden",
             backgroundColor: theme.palette.custom.background,
             scrollBehavior: "smooth"
           },
@@ -107,17 +110,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="container-custom">
-        <Navbar />
-        <Tel />
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/filials" element={<Filials />}/>
-          <Route path="/product/:id" element={<ProductOpen />}/>
-        </Routes>
+      <div className="flex flex-row">
+        <Sidebar />
+        <div className={`${sidebarOpen ? "w-4/5" : "w-full"}`}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<NewProducts />} />
+            <Route path="/all-products" element={<AllProducts />} />
+            <Route path="/ads" element={<Ads />} />
+          </Routes>
+        </div>
       </div>
-      <Footer />
     </ThemeProvider>
   );
 }

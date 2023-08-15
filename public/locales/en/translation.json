@@ -1,99 +1,43 @@
 {
   "header": {
-    "catalog": {
-      "title": "Catalog",
-      "earbud": "Earbud",
-      "electronics": "Electronics",
-      "holster": "Telephone holster",
-      "eyeglass": "Eyeglasses"
+    "search": "Product search...",
+    "links": {
+      "new": "New Products",
+      "all": "All Products",
+      "ad": "Advertising"
     },
-    "about": "About Us",
-    "filials": "Our branches",
-    "search": "Product search..."
+    "button": "Open profile"
   },
   "newProducts": {
-    "title": "New Products",
-    "comment": "comment",
-    "available": "Available",
-    "color": "Choose a color",
-    "btn": "See all",
-    "features": "Technical characteristics",
-    "all": "General",
-    "details": "Product details",
-    "price": "Price"
+    "title": "New Products"
+  },
+  "add": {
+    "all": {
+      "title": "All",
+      "name": "Name",
+      "desc": "Briefly about the product",
+      "photo": "Image",
+      "color": "Specialty colors",
+      "count": "Number of products"
+    },
+    "info": {
+      "title": "Maxsulot  texnik xususiyatlari",
+      "brand": "Brand"
+    },
+    "ads": {
+      "title": "Advertising",
+      "size": "Image Upload PNG, JPG"
+    },
+    "btn": "Saqlash"
   },
   "products": {
-    "title": "All Products",
-    "sort": {
-      "title": "All"
-    }
-  },
-  "about": {
-    "title": "About us",
-    "description": "Welcome to Mobion store. Here you can find all electronics products. For more than 2 years, we have been engaged in choosing and advising the right gadget for our customers. Throughout our presence on the market, we have managed to optimize intercity delivery, so you will receive the gadget in three days, if you need delivery within the city, we will deliver the gadget in 2 hours. 90% of our customers become regular customers, because we guarantee a year. We work 7 days a week from 10:00 to 20:00. Visit us, we will always help you find the right gadget."
-  },
-  "filial": {
-    "shop": "Shop",
-    "location": "Location",
-    "order": "Working order"
-  },
-  "faq": {
-    "title": "Frequently asked questions",
-    "card1": {
-      "title": "What methods of delivery are there?",
-      "info": "Delivery by courier is 30,000. Courier service is free if the order value price exceeds 490,000 rubles."
-    },
-    "card2": {
-      "title": "What methods of delivery are there?",
-      "info": "Delivery by courier is 30,000. Courier service is free if the order value price exceeds 490,000 rubles."
-    },
-    "card3": {
-      "title": "What methods of delivery are there?",
-      "info": "Delivery by courier is 30,000. Courier service is free if the order value price exceeds 490,000 rubles."
-    },
-    "card4": {
-      "title": "What methods of delivery are there?",
-      "info": "Delivery by courier is 30,000. Courier service is free if the order value price exceeds 490,000 rubles."
-    },
-    "card5": {
-      "title": "What methods of delivery are there?",
-      "info": "Delivery by courier is 30,000. Courier service is free if the order value price exceeds 490,000 rubles."
-    }
-  },
-  "contact": {
-    "title": "Contact Us",
-    "name": "Your name",
-    "namePlaceholder": "Name",
-    "phone": "Your Phone Number",
-    "phonePlaceholder": "Phone",
-    "submit": "Submit",
-    "error": {
-      "all": "Information is incomplete!",
-      "name": "Name is required!",
-      "phone": "Phone is required!",
-      "mail": "Mail is required!",
-      "many_requests": "Too many attempts. Wait at 5 min!"
-    },
-    "success": "Successful submitted!"
-  },
-  "footer": {
-    "section1": {
-      "title": "About us",
-      "catalog": "Catalog",
-      "about": "Delivery"
-    },
-    "section2": {
-      "title": "For users",
-      "contact": "Contact us",
-      "faq": "Frequently asked questions"
-    },
-    "contact": "Contact us",
-    "info": "© 2023 Mobian. All rights reserved",
-    "creator": "developed"
+    "title": "All Products"
   },
   "helpers": {
     "connect": "Contact us",
     "shop": "Shop now",
-    "no_product": "No Product"
+    "no_product": "No Product",
+    "btn_edit": "Edit",
+    "btn_remove": "Delete"
   }
 }

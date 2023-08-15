@@ -2,55 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "inter-black";
-  src: url("./fonts/Inter-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-extrabold";
-  src: url("./fonts/Inter-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-bold";
-  src: url("./fonts/Inter-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-semibold";
-  src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-medium";
-  src: url("./fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-regular";
-  src: url("./fonts/Inter-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "inter-light";
-  src: url("./fonts/Inter-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
 @layer components {
   .center-mode {
     @apply flex items-center justify-center;
@@ -73,6 +24,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.input-add {
+  @apply w-full h-[45px] rounded-2xl outline-none px-3 text-[#012350]
 }
 
 @media screen and (max-width: 1110px) {

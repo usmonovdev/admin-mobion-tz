@@ -1,99 +1,43 @@
 {
   "header": {
-    "catalog": {
-      "title": "Katalog",
-      "earbud": "Quloqchinlar",
-      "electronics": "Elektronika",
-      "holster": "Telefon g’ilof",
-      "eyeglass": "Ko'zoynaklar"
+    "search": "Mahsulotni qidirish...",
+    "links": {
+      "new": "Yangi Maxsulotlar",
+      "all": "Barcha Maxsulotlar",
+      "ad": "Reklama"
     },
-    "about": "Biz haqimizda",
-    "filials": "Filiallarimiz",
-    "search": "Mahsulotni qidirish..."
+    "button": "Profilni ochish"
   },
   "newProducts": {
-    "title": "Yangi Maxsulotlar",
-    "comment": "sharh",
-    "available": "Mavjud",
-    "color": "Rangini tanlang",
-    "btn": "Barchasini ko'rish",
-    "features": "Texnik xususiyatlari",
-    "all": "Umumiy",
-    "details": "Mahsulot tafsilotlari",
-    "price": "Narxi"
+    "title": "Yangi Maxsulotlar"
+  },
+  "add": {
+    "all": {
+      "title": "Barchasi",
+      "name": "Nomi",
+      "desc": "Maxsulot haqida qisqacha",
+      "photo": "Rasm",
+      "color": "Maxsulot ranglari",
+      "count": "Maxsulot soni"
+    },
+    "info": {
+      "title": "Maxsulot  texnik xususiyatlari",
+      "brand": "Brand"
+    },
+    "ads": {
+      "title": "Reklama",
+      "size": "Rasm Yuklash PNG, JPG"
+    },
+    "btn": "Saqlash"
   },
   "products": {
-    "title": "Barcha Maxsulotlar",
-    "sort": {
-      "title": "Barchasi"
-    }
-  },
-  "about": {
-    "title": "Biz haqimizda",
-    "description": "Mobion do'koniga xush kelibsiz. Bu yerda siz barcha Elektronika mahsulotlarini topishingiz mumkin. 2 yildan ortiq vaqt davomida biz mijozlarimiz uchun to'g'ri gadjetni tanlash va maslahat berish bilan shug'ullanamiz. Bozorda mavjud bo'lganimiz davomida biz shaharlararo yetkazib berishni optimallashtirishga muvaffaq bo'ldik, shuning uchun siz gadjetni uch kun ichida olasiz, agar sizga shahar ichida yetkazib berish kerak bo'lsa, biz gadjetni 2 soat ichida yetkazib beramiz. Mijozlarimizning 90% doimiy mijozlarga aylanadi, chunki biz bir yil kafolat beramiz. Biz haftada 7 kun 10:00 dan 20:00 gacha ishlaymiz. Bizga tashrif buyuring, biz har doim sizga mos gadjetni topishga yordam beramiz."
-  },
-  "filial": {
-    "shop": "Do'kon",
-    "location": "Manzil",
-    "order": "Ish tartibi"
-  },
-  "faq": {
-    "title": "Tez-tez so'raladigan savollar",
-    "card1": {
-      "title": "Yetkazib berishning qanday usullari mavjud?",
-      "info": "Kuryer orqali yetkazib berish 30 000 so’mni tashkil etadi. Agar buyurtma qiymat narxi 490 000 so’mdan oshsa, kuryer xizmati bepul hisoblanadi."
-    },
-    "card2": {
-      "title": "Yetkazib berishning qanday usullari mavjud?",
-      "info": "Kuryer orqali yetkazib berish 30 000 so’mni tashkil etadi. Agar buyurtma qiymat narxi 490 000 so’mdan oshsa, kuryer xizmati bepul hisoblanadi."
-    },
-    "card3": {
-      "title": "Yetkazib berishning qanday usullari mavjud?",
-      "info": "Kuryer orqali yetkazib berish 30 000 so’mni tashkil etadi. Agar buyurtma qiymat narxi 490 000 so’mdan oshsa, kuryer xizmati bepul hisoblanadi."
-    },
-    "card4": {
-      "title": "Yetkazib berishning qanday usullari mavjud?",
-      "info": "Kuryer orqali yetkazib berish 30 000 so’mni tashkil etadi. Agar buyurtma qiymat narxi 490 000 so’mdan oshsa, kuryer xizmati bepul hisoblanadi."
-    },
-    "card5": {
-      "title": "Yetkazib berishning qanday usullari mavjud?",
-      "info": "Kuryer orqali yetkazib berish 30 000 so’mni tashkil etadi. Agar buyurtma qiymat narxi 490 000 so’mdan oshsa, kuryer xizmati bepul hisoblanadi."
-    }
-  },
-  "contact": {
-    "title": "Biz bilan bo’glanish",
-    "name": "Ismingiz",
-    "namePlaceholder": "Ism",
-    "phone": "Telefon Raqamingiz",
-    "phonePlaceholder": "Telefon",
-    "submit": "Yuborish",
-    "error": {
-      "all": "Ma'lumotlar to'liq emas!",
-      "name": "Ism kiritilmadi!",
-      "phone": "Telefon raqam kiritilmadi!",
-      "mail": "Xabar kiritilmadi!",
-      "many_requests": "Juda ko'p urinishlar. 5 daqida kuting!"
-    },
-    "success": "Muvaffaqiyatli yuborildi!"
-  },
-  "footer": {
-    "section1": {
-      "title": "Biz haqimizda",
-      "catalog": "Katalog",
-      "about": "Yetkazib berish"
-    },
-    "section2": {
-      "title": "Foydalanuvchilarga",
-      "contact": "Biz bilan bog’lanish",
-      "faq": "Tez-tez so'raladigan savollar"
-    },
-    "contact": "Bog‘lanish",
-    "info": "© 2023 Mobion. Barcha huquqlar himoyalangan",
-    "creator": "tomonidan ishlab chiqilgan"
+    "title": "Barcha Maxsulotlar"
   },
   "helpers": {
     "connect": "Biz bilan bog’lanish",
     "shop": "Hozir xarid qiling",
-    "no_product": "Maxsulotlar topilmadi"
+    "no_product": "Maxsulotlar topilmadi",
+    "btn_edit": "Tahrirlash",
+    "btn_remove": "O'chirish"
   }
 }

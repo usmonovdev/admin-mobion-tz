@@ -2,8 +2,8 @@ import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import Aos from "aos";
-import { Route, Routes } from "react-router-dom";
-import { Ads, AllProducts, Navbar, NewProducts, Sidebar } from "./components/";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { Ads, AllProducts, Login, Navbar, NewProducts, Sidebar } from "./components/";
 import 'aos/dist/aos.css';
 import 'swiper/css';
 const { palette } = createTheme();
@@ -14,6 +14,8 @@ function App() {
   const [mode, setMode] = useState("light")
   const { sidebarOpen } = useSelector((state) => state.theme)
   const { isDarkMode } = useSelector(state => state.theme)
+  const isAdmin = localStorage.getItem("isAdmin")
+  const navigate = useNavigate()
   const getTokens = (mode) => ({
     palette: {
       mode,
@@ -107,20 +109,28 @@ function App() {
     });
   }, [])
 
+  useEffect(() => {
+    localStorage.setItem("IsAdmin", false)
+    if (isAdmin == false) {
+      navigate("/login")
+    }
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="flex flex-row">
-        <Sidebar />
-        <div className={`${sidebarOpen ? "w-4/5" : "w-full"}`}>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<NewProducts />} />
-            <Route path="/all-products" element={<AllProducts />} />
-            <Route path="/ads" element={<Ads />} />
-          </Routes>
+        <div className="flex flex-row">
+          <Sidebar />
+          <div className={`${sidebarOpen ? "w-4/5" : "w-full"}`}>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<NewProducts />} />
+              <Route path="/all-products" element={<AllProducts />} />
+              <Route path="/ads" element={<Ads />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      <Routes><Route path="/login" element={<Login />} /></Routes>
     </ThemeProvider>
   );
 }

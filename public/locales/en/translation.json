@@ -11,6 +11,12 @@
   "newProducts": {
     "title": "New Products"
   },
+  "login": {
+    "title": "Log in",
+    "email": "Email",
+    "password": "Password",
+    "button": "Log in"
+  },
   "add": {
     "all": {
       "title": "All",

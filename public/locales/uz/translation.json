@@ -11,6 +11,12 @@
   "newProducts": {
     "title": "Yangi Maxsulotlar"
   },
+  "login": {
+    "title": "Tizimga kirish",
+    "email": "Login",
+    "password": "Password",
+    "button": "Kirish"
+  },
   "add": {
     "all": {
       "title": "Barchasi",

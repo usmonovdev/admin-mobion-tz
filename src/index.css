@@ -30,6 +30,10 @@
   @apply w-full h-[45px] rounded-2xl outline-none px-3 text-[#012350]
 }
 
+.input-login {
+  @apply w-full h-[45px] bg-[#FAFAFA] rounded-lg border outline-none !text-black px-4
+}
+
 @media screen and (max-width: 1110px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;

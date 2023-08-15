@@ -11,6 +11,12 @@
   "newProducts": {
     "title": "Новые Продукты"
   },
+  "login": {
+    "title": "Войти в систему",
+    "email": "Email",
+    "password": "Пароль",
+    "button": "Войти"
+  },
   "add": {
     "all": {
       "title": "Все",
